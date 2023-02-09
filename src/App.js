@@ -41,7 +41,12 @@ function App() {
         </Text>
         <Text fontWeight={600} fontSize="32px" mt="48px" ml="42px">
           If you're building something new and could use a hand,{" "}
-          <chakra.span color={"blue"} textDecor="underline">
+          <chakra.span
+            color={"blue"}
+            textDecor="underline"
+            as="a"
+            href={`mailto:team@spellbooklabs.com`}
+          >
             {" "}
             let&apos;s chat.
           </chakra.span>
