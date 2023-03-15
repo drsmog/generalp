@@ -1,13 +1,5 @@
 import "./App.css";
-import {
-  Box,
-  Button,
-  Image,
-  Text,
-  chakra,
-  Center,
-  Flex,
-} from "@chakra-ui/react";
+import { Image, Text, chakra, Center, Flex } from "@chakra-ui/react";
 import logo from "./imgs/logo.png"; // Tell webpack this JS file uses this image
 
 function App() {
