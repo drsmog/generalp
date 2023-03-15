@@ -1,52 +1,78 @@
 import "./App.css";
-import { Image, Text, chakra, Center, Flex } from "@chakra-ui/react";
+import { Image, Text, Center, Flex, Container } from "@chakra-ui/react";
+import mainImage from "./imgs/main.png"; // Tell webpack this JS file uses this image
 import logo from "./imgs/logo.png"; // Tell webpack this JS file uses this image
 
 function App() {
   return (
     <Flex
       flexDirection={"column"}
-      backgroundColor={"#F5F6FA"}
+      backgroundColor={"#000000"}
       minW="100vw"
       minH={"100vh"}
-      border="8px solid #0F0F0F"
+      pb="60px"
+      pt="60px"
     >
       <Flex flexGrow={1} flexDirection="column">
+        <Center>
+          <Image
+            src={mainImage}
+            alt="logo"
+            w={["284px", "284px", "284px"]}
+            h="115px"
+            minW={["284px", "284px", "284px"]}
+            minH="115px"
+          />
+        </Center>
+        <Container textAlign={"center"}>
+          <Text fontSize={"20px"} color={"#FCFCFC"} mt="36px">
+            Explorations of stories and principles of &apos;Titans&apos;.
+            <br />
+            <br />
+            General Principles are conversations and notes from my personal
+            quest of curiosity in how people successfully deal with the reality
+            they are dealt with in order to get what they want out of life.
+            <br />
+            <br />
+            It&apos;s my own 2.0 version of &apos;Tools for Titans&apos; to
+            better understand the principles that guide top performers in their
+            own understanding of happiness, success and lessons of wisdom.
+          </Text>
+        </Container>
+      </Flex>
+      <Center mt="48px">
         <Image
           src={logo}
           alt="logo"
-          w={["280px", "280px", "360px"]}
-          h="64px"
-          minW={["280px", "280px", "360px"]}
-          minH="64px"
-          mt="28px"
-          ml="42px"
+          w={["53px", "53px", "53px"]}
+          h="78px"
+          minW={["53px", "53px", "53px"]}
+          minH="78px"
         />
+      </Center>
+      <Center justifyContent={"center"} mt="36px">
         <Text
-          color={"#1753EF"}
-          fontWeight={600}
-          fontSize={["40px", "40px", "96px"]}
-          mt="116px"
-          ml="42px"
+          color={"#FCFCFC"}
+          fontWeight={700}
+          textDecor="underline"
+          as="a"
+          href="https://blog.generalprinciples.to"
+          target={"_blank"}
+          fontSize="24px"
         >
-          Crafting Magical Digital Products
+          Notes
         </Text>
-        <Text fontWeight={600} fontSize="32px" mt="48px" ml="42px">
-          If you're building something new and could use a hand,{" "}
-          <chakra.span
-            color={"blue"}
-            textDecor="underline"
-            as="a"
-            href={`mailto:team@spellbooklabs.com`}
-          >
-            {" "}
-            let&apos;s chat.
-          </chakra.span>
-        </Text>
-      </Flex>
-      <Center p="20px">
-        <Text fontWeight={300} textAlign="center">
-          It was always the plan to put the world in your hand.
+        <Text
+          color={"#FCFCFC"}
+          fontWeight={700}
+          textDecor="underline"
+          ml="84px"
+          as="a"
+          href="https://blog.generalprinciples.to"
+          target={"_blank"}
+          fontSize="24px"
+        >
+          Podcast
         </Text>
       </Center>
     </Flex>
