@@ -13,7 +13,7 @@ function App() {
       pb="60px"
       pt="60px"
     >
-      <Flex flexGrow={1} flexDirection="column">
+      <Flex flexDirection="column">
         <Center>
           <Image
             src={mainImage}
